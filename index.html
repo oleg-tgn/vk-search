@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta   charset="UTF-8">
+        <title>VK API</title>
+
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="css/main.min.css">
+</head>
+<body>
+	<div class="container">
+        <!--Ввод данных-->
+        <!--Имена переменных совпадают с наименованиями данных, получаемых с сервера-->
+        <!--Одно поле-->
+        
+        <!--Несколько полей-->
+
+        <div class="row">
+            <div class="col">
+                <div class="alert alert-primary" role="alert">
+                  Задача поиска людей в интеренете была выполнена частично с помощью использования API Vkontakte.
+                  Дальнейшее развитие задачи можно сделать с использованием  других популярных социальных сетей и API Google.
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="get_data card" id="js-get_data">
+                    <div class="card-header">Внесите данные</div>
+                    <div class="card-body">                    
+                        <div class="data" id="js-data">
+                            <div class="form-group js-list__item">
+                                <input type="text" id="name" class="form-control form-control-sm" placeholder="Имя">
+                            </div>
+                            <div class="form-group js-list__item">
+                                <input type="text" id="surname" class="form-control form-control-sm" placeholder="Фамилия">
+                            </div>
+                            <div class="form-group js-list__item">
+                                <input type="text" id="firstname" class="form-control form-control-sm" placeholder="Отчество">
+                            </div>
+                            <div class="form-group js-list__item">
+                                <input type="text" id="company" class="form-control form-control-sm" placeholder="Место работы">
+                            </div>
+                            <div class="form-group js-list__item">
+                                <input type="text" id="country" class="form-control form-control-sm" placeholder="Страна">
+                            </div>
+                            
+                            <div class="form-group js-list__item " id="js-city">
+                                <input type="text" id="city" class="form-control form-control-sm" placeholder="Город">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label>
+                                    День рождения
+                                </label>
+                                <div class="row js-list__item">                                
+                                    <div class="col">
+                                        <input type="text" id="birth_day" class="form-control form-control-sm" placeholder="День">
+                                    </div>                                
+                                    <div class="col">
+                                        <input type="text" id="birth_month" class="form-control form-control-sm" placeholder="Месяц">
+                                    </div>                                
+                                    <div class="col">
+                                        <input type="text" id="birth_year" class="form-control form-control-sm"  placeholder="Год">
+                                    </div>                            
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary" id="js-get_list">Получить</button>
+                    </div>
+                </div>
+            </div>
+
+            <!--Список пользователей вк, подходящих критерию-->
+            <div class="col-sm-4">
+                <div class="list-people card">
+                    <div class="card-header">Результат поиска</div>
+                    <div class="card-body">
+                        <div class="data"></div>
+                    </div>
+                </div>
+            </div>
+            <!--Полученные данные-->
+            <div class="col-sm-4">
+                <div class="information card">
+                    <div class="card-header">Данные пользователя</div>
+                    <div class="card-body">
+                        <div class="data"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!--библиотека JQuery-->
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <!--Для работы с вк-->
+        <script type="text/javascript" src="https://vk.com/js/api/xd_connection.js?2"></script>
+        <!--Мои методы-->
+        <script type="text/javascript" src="js/my_vk.min.js"></script>
+        <script type="text/javascript" src="js/main.min.js"></script>
+</body>
+</html>
