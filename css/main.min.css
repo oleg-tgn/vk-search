@@ -70,9 +70,6 @@ button {
     .name-item_enter:focus {
       outline: none; }
 
-._active {
-  background-color: #fff; }
-
 .list-people {
   height: 490px;
   overflow: auto;

@@ -35,23 +35,23 @@
                     <div class="card-body">                    
                         <div class="data" id="js-data">
                             <div class="form-group js-list__item">
-                                <input type="text" id="name" class="form-control form-control-sm" placeholder="Имя">
+                                <input type="text" data-name="name" id="name" class="form-control form-control-sm js-data" placeholder="Имя">
                             </div>
                             <div class="form-group js-list__item">
-                                <input type="text" id="surname" class="form-control form-control-sm" placeholder="Фамилия">
+                                <input type="text" data-name="surname" id="surname" class="form-control form-control-sm js-data" placeholder="Фамилия">
                             </div>
                             <div class="form-group js-list__item">
-                                <input type="text" id="firstname" class="form-control form-control-sm" placeholder="Отчество">
+                                <input type="text" data-name="firstname" id="firstname" class="form-control form-control-sm js-data" placeholder="Отчество">
                             </div>
                             <div class="form-group js-list__item">
-                                <input type="text" id="company" class="form-control form-control-sm" placeholder="Место работы">
+                                <input type="text" data-name="company" id="company" class="form-control form-control-sm js-data" placeholder="Место работы">
                             </div>
                             <div class="form-group js-list__item">
-                                <input type="text" id="country" class="form-control form-control-sm" placeholder="Страна">
+                                <input type="text" data-name="country" id="country" class="form-control form-control-sm js-data" placeholder="Страна">
                             </div>
                             
-                            <div class="form-group js-list__item " id="js-city">
-                                <input type="text" id="city" class="form-control form-control-sm" placeholder="Город">
+                            <div class="form-group js-list__item _none" id="js-city">
+                                <input type="text" data-name="city" id="city" class="form-control form-control-sm js-data" placeholder="Город">
                             </div>
                             
                             <div class="form-group">
@@ -60,13 +60,13 @@
                                 </label>
                                 <div class="row js-list__item">                                
                                     <div class="col">
-                                        <input type="text" id="birth_day" class="form-control form-control-sm" placeholder="День">
+                                        <input type="text" data-name="birth_day" id="birth_day" class="form-control form-control-sm js-data" placeholder="День">
                                     </div>                                
                                     <div class="col">
-                                        <input type="text" id="birth_month" class="form-control form-control-sm" placeholder="Месяц">
+                                        <input type="text" data-name="birth_month" id="birth_month" class="form-control form-control-sm js-data" placeholder="Месяц">
                                     </div>                                
                                     <div class="col">
-                                        <input type="text" id="birth_year" class="form-control form-control-sm"  placeholder="Год">
+                                        <input type="text" data-name="birth_year" id="birth_year" class="form-control form-control-sm js-data"  placeholder="Год">
                                     </div>                            
                                 </div>
                             </div>
@@ -81,7 +81,7 @@
                 <div class="list-people card">
                     <div class="card-header">Результат поиска</div>
                     <div class="card-body">
-                        <div class="data"></div>
+                        <div class="data" id="data-peoples"></div>
                     </div>
                 </div>
             </div>
@@ -90,7 +90,7 @@
                 <div class="information card">
                     <div class="card-header">Данные пользователя</div>
                     <div class="card-body">
-                        <div class="data"></div>
+                        <div class="data" id="data-info"></div>
                     </div>
                 </div>
             </div>
